@@ -17,9 +17,11 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 for TARGET in "${TARGET_DIRS[@]}"; do
     echo "📦 Target directory: $TARGET"
+    mkdir -p "$TARGET/cli-skills"
     mkdir -p "$TARGET/gemini-skill"
     
-    # Copy main gemini-skill
+    # Copy main cli-skills (and gemini-skill alias)
+    cp "$SCRIPT_DIR/SKILL.md" "$TARGET/cli-skills/" 2>/dev/null || true
     cp "$SCRIPT_DIR/SKILL.md" "$TARGET/gemini-skill/" 2>/dev/null || true
     
     # Copy all mentioned-skills globally

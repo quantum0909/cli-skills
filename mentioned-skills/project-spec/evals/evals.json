@@ -1,0 +1,42 @@
+{
+  "skill_name": "project-spec",
+  "evals": [
+    {
+      "id": 0,
+      "name": "kanban_app_spec",
+      "prompt": "Create a complete project specification for a real-time Kanban board web application built with React, Vite, and Supabase.",
+      "expected_output": "Generates all 6 spec files (PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, Memory.md) with tailored React and Supabase details.",
+      "assertions": [
+        "All 6 specification files (PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, Memory.md) are generated.",
+        "PRD.md includes target user personas and core real-time Kanban features.",
+        "Architecture.md includes React and Supabase tech stack and folder layout.",
+        "Rules.md lists explicit AI boundaries and prohibited libraries.",
+        "Phases.md defines sequential phase milestones for development."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "cli_tool_spec",
+      "prompt": "Generate full project specification docs for a Python CLI log parsing and analysis tool named LogGazer.",
+      "expected_output": "Generates all 6 spec files tailored for a Python CLI application.",
+      "assertions": [
+        "All 6 specification files are generated in the target directory.",
+        "PRD.md defines CLI commands and log parsing requirements.",
+        "Architecture.md specifies Python dependencies and CLI module structure.",
+        "Design.md defines terminal UI styling, colors, and output formatting."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ecommerce_api_spec",
+      "prompt": "Set up project spec files for an e-commerce REST API backend built with Node.js, Express, and PostgreSQL.",
+      "expected_output": "Generates all 6 spec files with database schemas, API routes, and backend rules.",
+      "assertions": [
+        "All 6 specification files are created.",
+        "Architecture.md outlines Express route structures and PostgreSQL models.",
+        "Rules.md defines error handling and authentication security boundaries.",
+        "Memory.md initializes progress tracking for initial development."
+      ]
+    }
+  ]
+}

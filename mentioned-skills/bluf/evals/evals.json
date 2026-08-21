@@ -1,0 +1,38 @@
+{
+  "skill_name": "bluf",
+  "evals": [
+    {
+      "id": 0,
+      "name": "timeout_incident",
+      "prompt": "We are experiencing HTTP 504 Gateway Timeout errors on our checkout endpoint during peak sales hours. What is causing this and how do we fix it quickly?",
+      "expected_output": "First sentence states cause and immediate fix directly. Supporting points are listed in 2-4 concise bullets. No preamble or conversational fluff.",
+      "assertions": [
+        "First sentence contains the direct answer without greetings or restatements.",
+        "Supporting details use 2 to 4 concise bullet points.",
+        "Does not contain conversational filler like 'great question', 'basically', or 'in order to'."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "architecture_recommendation",
+      "prompt": "Should our engineering team refactor our monorepo to microservices before the Q4 product release?",
+      "expected_output": "First sentence gives a firm yes/no recommendation. Supporting points justify the decision in 2-4 bullets.",
+      "assertions": [
+        "First sentence provides an unambiguous recommendation.",
+        "Contains 2 to 4 bullet points with justification.",
+        "Avoids unresolved hedging language like 'it depends'."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "deployment_strategy",
+      "prompt": "What deployment strategy should we use to update our payment service with zero downtime?",
+      "expected_output": "First sentence names the exact strategy. Bullets specify execution steps.",
+      "assertions": [
+        "First sentence directly names the recommended deployment strategy.",
+        "Response uses plain terms and minimal jargon.",
+        "Uses brief bullet points for implementation steps."
+      ]
+    }
+  ]
+}

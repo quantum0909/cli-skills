@@ -1,0 +1,22 @@
+[
+  {"query": "Generate a complete PRD, Architecture, and Rules specification package for a new SaaS application", "should_trigger": true},
+  {"query": "I'm starting a new web project and I need PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, and Memory.md files", "should_trigger": true},
+  {"query": "scaffold the project specification documents for a React Native mobile app", "should_trigger": true},
+  {"query": "/project-spec create full project docs for a Rust web crawler", "should_trigger": true},
+  {"query": "write project requirements and architecture documents before we start coding our Go microservice", "should_trigger": true},
+  {"query": "set up project spec files (PRD, architecture, phases, design) for a Django REST framework backend", "should_trigger": true},
+  {"query": "create project specification blueprints for an electron desktop application", "should_trigger": true},
+  {"query": "can you write PRD.md and Architecture.md for my Next.js e-commerce app?", "should_trigger": true},
+  {"query": "generate project specs with AI coding rules and implementation phases for a Vue 3 app", "should_trigger": true},
+  {"query": "bootstrap project planning documentation including PRD, tech stack architecture, and development phases", "should_trigger": true},
+  {"query": "Explain the difference between functional and non-functional requirements in software engineering", "should_trigger": false},
+  {"query": "Write a python script to parse markdown files and extract headers into a table of contents", "should_trigger": false},
+  {"query": "Refactor this SQL query to use window functions instead of subqueries", "should_trigger": false},
+  {"query": "Draft a technical blog post explaining how to deploy Docker containers to AWS ECS", "should_trigger": false},
+  {"query": "Create a README.md file for an open-source GitHub repository", "should_trigger": false},
+  {"query": "Write unit tests for my Express.js user authentication controller", "should_trigger": false},
+  {"query": "Debug this React useEffect hook that causes an infinite rerender loop", "should_trigger": false},
+  {"query": "What are best practices for organizing CSS modules in a Vite project?", "should_trigger": false},
+  {"query": "Explain how Git rebase works compared to Git merge", "should_trigger": false},
+  {"query": "Convert this JSON data structure into TypeScript type definitions", "should_trigger": false}
+]

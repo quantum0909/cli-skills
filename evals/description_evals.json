@@ -1,0 +1,22 @@
+[
+  {"query": "run /gemini-skill to start my new web app project in an empty folder", "should_trigger": true},
+  {"query": "I just opened an empty project directory, run gemini-skill to interview me and set up PRD, architecture, and GEMINI.md", "should_trigger": true},
+  {"query": "resume building our project using gemini-skill context loader", "should_trigger": true},
+  {"query": "/gemini-skill check if this repository has GEMINI.md and continue where we left off", "should_trigger": true},
+  {"query": "initialize project context with caveman and ponytail token savings using gemini-skill", "should_trigger": true},
+  {"query": "start new software project with gemini master orchestrator", "should_trigger": true},
+  {"query": "launch gemini-skill to set up project spec files, bluf mode, and gemini.md context tracking", "should_trigger": true},
+  {"query": "open this existing repository with gemini-skill to load Memory.md and active phase status", "should_trigger": true},
+  {"query": "bootstrap new project setup with interview, 6 spec files, and token compression using gemini-skill", "should_trigger": true},
+  {"query": "run /gemini-skill to restore project context and start building phase 1", "should_trigger": true},
+  {"query": "Explain how Google Gemini AI model compares to GPT-4", "should_trigger": false},
+  {"query": "Write a python script to query the Gemini API endpoint for text generation", "should_trigger": false},
+  {"query": "Refactor this database query in PostgreSQL", "should_trigger": false},
+  {"query": "Create a simple Dockerfile for a Python web server", "should_trigger": false},
+  {"query": "What are the rules of chess?", "should_trigger": false},
+  {"query": "Write unit tests for a React button component", "should_trigger": false},
+  {"query": "Draft an email to my team about tomorrow's standup meeting", "should_trigger": false},
+  {"query": "Explain how Git branches work in GitHub", "should_trigger": false},
+  {"query": "Convert CSV file to JSON format in JavaScript", "should_trigger": false},
+  {"query": "How do I install Node.js on Linux?", "should_trigger": false}
+]

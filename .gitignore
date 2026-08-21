@@ -1,0 +1,13 @@
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Environment & Temp
+*.tmp
+*.log
+.vscode/
+.idea/
+
+# AI / Cache temp files
+.gemini/tmp/
+.claude/tmp/

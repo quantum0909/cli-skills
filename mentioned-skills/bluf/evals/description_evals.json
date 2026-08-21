@@ -1,0 +1,22 @@
+[
+  {"query": "ok so our backend engineer just asked if we should migrate our auth service to OAuth2 PKCE before the Friday release. give me a bottom line recommendation.", "should_trigger": true},
+  {"query": "give me the bottom line up front on why our Redis cluster memory usage spiked to 98% during the flash sale", "should_trigger": true},
+  {"query": "I need you to answer this using US military staff style: should we drop support for iOS 14 in our next update?", "should_trigger": true},
+  {"query": "/bluf how do we fix the database deadlock on the transactions table?", "should_trigger": true},
+  {"query": "give me a direct answer without preamble or fluff: what is the best strategy for zero-downtime database migrations?", "should_trigger": true},
+  {"query": "my manager wants a quick BLUF report on whether we can meet the SOC2 compliance deadline next month", "should_trigger": true},
+  {"query": "no greetings or restating my question, just give me the bottom line: should we use Kafka or RabbitMQ for order processing?", "should_trigger": true},
+  {"query": "cut the fluff and preamble, tell me immediately what caused the P1 outage on our payment gateway", "should_trigger": true},
+  {"query": "give me a concise military style assessment of our Kubernetes cluster CPU throttling issues", "should_trigger": true},
+  {"query": "BLUF: should we rollback release v2.4.1 after seeing a 3% increase in HTTP 500 errors?", "should_trigger": true},
+  {"query": "Write a python script using asyncio to poll a REST endpoint every 5 seconds and log response times to a CSV file", "should_trigger": false},
+  {"query": "Explain the history and origins of Bottom Line Up Front communication in the US Military", "should_trigger": false},
+  {"query": "Create a full technical specification document for a new user authentication microservice including DB schema and API endpoints", "should_trigger": false},
+  {"query": "Draft a polite email to a enterprise customer explaining why their feature request was delayed", "should_trigger": false},
+  {"query": "Write a comprehensive tutorial on how to configure NGINX as a load balancer with SSL termination", "should_trigger": false},
+  {"query": "Refactor this 200-line React component into smaller subcomponents using hooks", "should_trigger": false},
+  {"query": "What are the key differences between monolithic architectures and microservices architectures in software engineering?", "should_trigger": false},
+  {"query": "Generate a complete Dockerfile and docker-compose.yml for a Node.js Express app with MongoDB", "should_trigger": false},
+  {"query": "Write unit tests using Jest for this authentication helper function in auth.js", "should_trigger": false},
+  {"query": "Draft a blog post announcing our company's new AI features for marketing", "should_trigger": false}
+]

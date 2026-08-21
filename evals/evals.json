@@ -1,0 +1,28 @@
+{
+  "skill_name": "gemini-skill",
+  "evals": [
+    {
+      "id": 0,
+      "name": "new_project_init",
+      "prompt": "Run /gemini-skill to start a new real-time collaboration tool named TaskSync in an empty folder.",
+      "expected_output": "Triggers /grill-me interactive interview, creates the 6 project-spec files, writes GEMINI.md, and enables caveman/ponytail token optimization modes.",
+      "assertions": [
+        "Detects empty project directory and triggers /grill-me interview workflow.",
+        "Generates GEMINI.md context tracking file.",
+        "Generates PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, and Memory.md.",
+        "Activates caveman and ponytail token efficiency modes for development."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "existing_project_resume",
+      "prompt": "Run /gemini-skill in an existing repository that already contains GEMINI.md and spec docs.",
+      "expected_output": "Reads existing GEMINI.md and Memory.md files, skips the interview, identifies active phase, and resumes building immediately.",
+      "assertions": [
+        "Detects existing GEMINI.md and project spec files without asking initial setup questions.",
+        "Loads active phase status from Memory.md and GEMINI.md.",
+        "Resumes task execution using caveman and ponytail rules."
+      ]
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 ---
 name: cli-skills
-description: Master project initialization, context orchestrator, and skill manager. Automatically detects empty or existing project directories, conducts grilling interviews using /grill-me protocol, generates 6 essential project specification files (PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, Memory.md), creates/checks primary AI entry point tracker files (GEMINI.md for Gemini/AGY or CLAUDE.md for Claude Code), orchestrates caveman, ponytail, bluf, and karpathy-guidelines, and supports /cli-final (/cli-skills:final) to clean up spec files upon project completion for GitHub release. Use this skill whenever starting a new project, resuming an existing codebase, or invoking /cli-skills or /cli-skills:final.
+description: Master project initialization, context orchestrator, and skill manager. Automatically detects empty or existing project directories, conducts grilling interviews using /grill-me protocol, generates 6 essential project specification files (PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, Memory.md), creates/checks primary AI entry point tracker files (GEMINI.md for Gemini/AGY or CLAUDE.md for Claude Code), and orchestrates caveman, ponytail, bluf, and karpathy-guidelines. Note: When a project is finished, the user can manually trigger /cli-skills:final to delete all spec files and GEMINI.md/CLAUDE.md at once for a clean package export. Use this skill whenever starting a new project, resuming an existing codebase, or invoking /cli-skills.
 ---
 
 # CLI Skills (`cli-skills`) — Master Project Orchestrator
 
-Orchestrate project initialization, context preservation, specification generation, skill creation, token-optimized execution, and final GitHub release cleanup using integrated sub-skills (`project-spec`, `grill-me`, `bluf`, `caveman`, `ponytail`, `karpathy-guidelines`, `skill-creator`, `cli-final`).
+Orchestrate project initialization, context preservation, specification generation, skill creation, and token-optimized execution using integrated sub-skills (`project-spec`, `grill-me`, `bluf`, `caveman`, `ponytail`, `karpathy-guidelines`, `skill-creator`).
 
 ---
 
@@ -19,13 +19,14 @@ Orchestrate project initialization, context preservation, specification generati
    - **`Design.md`**: UI/UX System & Design Guidelines
    - **`Memory.md`**: Historical Decisions & Progress Log
 2. **Primary AI Entry Point (`GEMINI.md` / `CLAUDE.md`)**: Generates the root context tracker (`GEMINI.md` for Google Antigravity / Gemini CLI or `CLAUDE.md` for Claude Code) that the AI reads first upon launch. Contains mandatory directives forcing the AI to read all 6 `project-spec` files to prevent goal drift and auto-update specs whenever changes occur.
-3. **`cli-final` (`/cli-skills:final`)**: When a project is completed, `cli-final` cleans up and deletes all temporary specification files (`PRD.md`, `Architecture.md`, `Rules.md`, `Phases.md`, `Design.md`, `Memory.md`, `GEMINI.md`, `CLAUDE.md`), verifies build integrity, and stages a clean codebase ready for GitHub push.
-4. **`caveman` Mode**: Strips unnecessary LLM filler, polite fluff, and repetitive summaries to drastically reduce token usage and API costs.
-5. **`ponytail` Mindset**: Makes your AI agent think like the laziest senior dev in the room — prioritizing standard library solutions, YAGNI ("You Aren't Gonna Need It"), zero-bloat code, and realizing that *the best code is the code you never wrote*.
-6. **`bluf` Protocol**: Enforces Bottom Line Up Front response format for immediate, executive clarity.
-7. **`karpathy-guidelines`**: Enforces Andrej Karpathy's core engineering principles — surgical changes, surfacing hidden assumptions, defining verifiable success criteria, and preventing LLM code overcomplication.
-8. **`/grill-me` Interview**: Grills the user with targeted questions whenever an empty folder or unclear requirement is detected.
-9. **`skill-creator`**: Creates, benchmarks, evaluates, and optimizes new or existing skills dynamically.
+3. **`caveman` Mode**: Strips unnecessary LLM filler, polite fluff, and repetitive summaries to drastically reduce token usage and API costs.
+4. **`ponytail` Mindset**: Makes your AI agent think like the laziest senior dev in the room — prioritizing standard library solutions, YAGNI ("You Aren't Gonna Need It"), zero-bloat code, and realizing that *the best code is the code you never wrote*.
+5. **`bluf` Protocol**: Enforces Bottom Line Up Front response format for immediate, executive clarity.
+6. **`karpathy-guidelines`**: Enforces Andrej Karpathy's core engineering principles — surgical changes, surfacing hidden assumptions, defining verifiable success criteria, and preventing LLM code overcomplication.
+7. **`/grill-me` Interview**: Grills the user with targeted questions whenever an empty folder or unclear requirement is detected.
+8. **`skill-creator`**: Creates, benchmarks, evaluates, and optimizes new or existing skills dynamically.
+
+*(Note: Once a project is fully completed, the user can manually invoke **`cli-skills:final`** (`/cli-skills:final`) to delete all spec files and `GEMINI.md`/`CLAUDE.md` at once for a clean package ready to share anywhere).*
 
 ---
 
@@ -46,11 +47,11 @@ Orchestrate project initialization, context preservation, specification generati
    4. Create `GEMINI.md` / `CLAUDE.md`    5. Resume Building Step
       Entry Point Tracker                               |
    5. Begin Phase 1 Execution                           v
-                                          [Upon Project Completion]
+                                          [User Explicitly Invokes]
                                                         |
-                                          Trigger `/cli-skills:final`
-                                          (Deletes spec files & prepares
-                                           clean GitHub release push)
+                                         Trigger `/cli-skills:final`
+                                        (Deletes spec files & GEMINI/CLAUDE.md
+                                         at once for clean package export)
 ```
 
 ---
@@ -71,12 +72,6 @@ Upon activation, inspect the root workspace:
    - **Step 2: Verification**: Verify file integrity and identify active phase tasks.
    - **Step 3: Mode Activation**: Enable `caveman`, `ponytail`, `karpathy-guidelines`, and `bluf` modes immediately.
    - **Step 4: Resume Building**: Pick up execution right where it left off. If any requirements or code structures change during execution, update the relevant `project-spec` files immediately.
-
-3. **Project Completion (`/cli-skills:final` or `/cli-final`)**:
-   - **Step 1: Verify Completion**: Confirm all phase tasks in `Phases.md` are 100% completed.
-   - **Step 2: Delete Spec Files**: Delete `PRD.md`, `Architecture.md`, `Rules.md`, `Phases.md`, `Design.md`, `Memory.md`, `GEMINI.md`, and `CLAUDE.md`.
-   - **Step 3: Build Verification**: Verify build/tests pass cleanly.
-   - **Step 4: GitHub Push**: Stage clean files and prepare Git commit for release.
 
 ---
 

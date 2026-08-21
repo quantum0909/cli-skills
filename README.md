@@ -5,7 +5,7 @@
 
 **`cli-skills`** is a unified global AI agent skill suite and master project orchestrator compatible across **Claude Code**, **Google Antigravity / Gemini CLI**, **Open Code**, **Cursor**, **Open Interpreter**, and standard MCP/Agent SDK platforms.
 
-It includes **`cli-skills`** (the master project initialization and context orchestrator) alongside **`mentioned-skills/`** (a curated collection of 18 token-efficient engineering skills, including **`cli-final`**).
+It includes **`cli-skills`** (the master project initialization and context orchestrator) alongside **`mentioned-skills/`** (a curated collection of 18 token-efficient engineering skills, including the user-activated **`cli-skills:final`**).
 
 ---
 
@@ -40,28 +40,6 @@ When executed at the start of a project (or when resuming an existing codebase):
 
 - **Applies Surgical Engineering Discipline with `karpathy-guidelines`**:
   Follows Andrej Karpathy's core coding principles: making surgical code edits, surfacing hidden assumptions early, defining verifiable success criteria before building, and preventing LLM code overcomplication.
-
----
-
-### 2. Project Completion & GitHub Release Cleanup (`/cli-skills:final` or `/cli-final`)
-
-When your project is 100% completed and ready for production release, run:
-
-```text
-/cli-skills:final
-```
-
-or
-
-```text
-/cli-final
-```
-
-**`cli-final`** will automatically:
-1. Verify that all phase milestones are 100% completed.
-2. Delete all temporary specification files (`PRD.md`, `Architecture.md`, `Rules.md`, `Phases.md`, `Design.md`, `Memory.md`, `GEMINI.md`, `CLAUDE.md`).
-3. Audit `.gitignore` and run build/test verification.
-4. Stage a clean production repository ready to be pushed to GitHub.
 
 ---
 
@@ -128,7 +106,7 @@ cli-skills/
     ├── caveman-help/         # Caveman help guide
     ├── caveman-review/       # Caveman code review
     ├── caveman-stats/        # Token savings tracking
-    ├── cli-final/            # Project completion & spec file cleanup skill
+    ├── cli-final/            # cli-skills:final project cleanup skill
     ├── karpathy-guidelines/  # Surgical edits & Karpathy principles
     ├── ponytail/             # Minimal, stdlib-first framework
     ├── ponytail-audit/       # Over-engineering audit
@@ -149,7 +127,7 @@ Below are the official GitHub links and origins for skills included in `cli-skil
 | Skill | Purpose | Official Source / Repository Link | Path |
 | :--- | :--- | :--- | :--- |
 | **`cli-skills`** | Master project orchestrator & context manager | 🔗 [quantum0909/cli-skills](https://github.com/quantum0909/cli-skills) | `SKILL.md` |
-| **`cli-final`** | Project completion & spec file cleanup | 🔗 [quantum0909/cli-skills](https://github.com/quantum0909/cli-skills) | `mentioned-skills/cli-final` |
+| **`cli-skills:final`** | User-activated project completion & spec cleanup | 🔗 [quantum0909/cli-skills](https://github.com/quantum0909/cli-skills) | `mentioned-skills/cli-final` |
 | **`caveman`** | Token-compressed technical communication suite | 🔗 [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) | `mentioned-skills/caveman` |
 | **`ponytail`** | Minimalist, stdlib-first YAGNI coding framework | 🔗 [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | `mentioned-skills/ponytail` |
 | **`karpathy-guidelines`** | Surgical edits & verifiable success criteria | 🔗 [multica-ai/andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills) | `mentioned-skills/karpathy-guidelines` |
@@ -167,11 +145,24 @@ Below are the official GitHub links and origins for skills included in `cli-skil
 ```
 > *"Run cli-skills to set up our new web application and generate PRD, Architecture, and GEMINI.md / CLAUDE.md."*
 
-### Finalizing & Cleaning up a Completed Project:
+---
+
+## 🧹 Project Completion & Clean Package Release (`cli-skills:final`)
+
+When your software project is 100% finished and you are ready to send, zip, or publish your completed package anywhere, run:
+
 ```text
 /cli-skills:final
 ```
-> *"Run cli-skills:final to clean up all temporary project spec files and prepare for GitHub release."*
+
+*(or `/cli-skill:final`)*
+
+> **`cli-skills:final`** is a standalone, **user-invoked skill** that deletes all temporary development specification files (`PRD.md`, `Architecture.md`, `Rules.md`, `Phases.md`, `Design.md`, `Memory.md`) **AND** deletes `GEMINI.md` or `CLAUDE.md` **all at once**!
+
+### What happens when you run `/cli-skills:final`:
+1. 🗑️ **One-Click File Deletion**: Deletes `PRD.md`, `Architecture.md`, `Rules.md`, `Phases.md`, `Design.md`, `Memory.md`, and `GEMINI.md` / `CLAUDE.md` simultaneously.
+2. 🛡️ **Preserves Production Assets**: Keeps user-facing `README.md`, `LICENSE`, configuration files, and source code untouched.
+3. 📦 **Clean Package Export**: Leaves your directory clean and ready to be uploaded, zipped, or published anywhere (GitHub, GitLab, S3, zip archive, etc.)!
 
 ---
 

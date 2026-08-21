@@ -1,44 +1,41 @@
 ---
-name: cli-final
-description: Project completion & GitHub release cleaner. Automatically invoked when a project is completed to clean up temporary project-spec files (PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, Memory.md, GEMINI.md, CLAUDE.md), verify clean git status, ensure build/tests pass, update .gitignore, and prepare the repository for a clean production push to GitHub. Use this skill whenever finalizing a completed project or invoking /cli-final or /cli-skills:final.
+name: cli-skills:final
+description: User-invoked project completion & spec cleanup skill. Use ONLY when explicitly invoked by the user typing /cli-skills:final or /cli-skill:final to finalize a completed project. Automatically deletes all temporary project specification files (PRD.md, Architecture.md, Rules.md, Phases.md, Design.md, Memory.md) AND deletes GEMINI.md or CLAUDE.md entry point files all at once, making it effortless to send, zip, or publish a clean completed package anywhere. Do NOT self-activate.
 ---
 
-# CLI Final (`cli-final`) — Project Cleanup & GitHub Release Preparer
+# CLI Skills Final (`cli-skills:final`) — Project Spec Cleaner & Package Preparer
 
-Finalize a completed project by purging temporary development specification files, auditing repository readiness, verifying builds, and staging a clean production codebase ready for GitHub release.
+`cli-skills:final` is a standalone, user-invoked skill designed to finalize a completed software project. When your project is 100% finished, running `/cli-skills:final` deletes all temporary specification and context tracking files at once so you have a clean, production-ready workspace ready to share, upload, or deploy anywhere.
 
 ---
 
-## 📋 Cleanup & Release Protocol
+## ⚡ How to Trigger
 
-When `/cli-final` or `/cli-skills:final` is invoked:
+```text
+/cli-skills:final
+```
+*(or `/cli-skill:final`)*
 
-### Step 1: Completion Verification
-1. Read `Phases.md` and `GEMINI.md` / `CLAUDE.md` to verify all milestone tasks are 100% completed.
-2. If incomplete tasks remain, prompt the user for confirmation before proceeding with cleanup.
+---
 
-### Step 2: Specification Cleanup & Removal
-Delete temporary specification and internal context tracking files that are no longer required in production:
-- ❌ `PRD.md`
-- ❌ `Architecture.md`
-- ❌ `Rules.md`
-- ❌ `Phases.md`
-- ❌ `Design.md`
-- ❌ `Memory.md`
-- ❌ `GEMINI.md` / `CLAUDE.md` / `CONTEXT.md`
+## 🧹 What `cli-skills:final` Deletes at Once
 
-*(Note: Essential project documentation such as user-facing `README.md`, `LICENSE`, and API docs are preserved).*
+When invoked by the user, `cli-skills:final` cleans up and deletes the following temporary files simultaneously:
 
-### Step 3: Git & Build Integrity Audit
-1. Check `.gitignore` to ensure temporary files, build artifacts, node_modules, and secret keys `.env` are ignored.
-2. Run project build and test commands (e.g. `npm test`, `pytest`, `cargo test`, `go test`) to ensure zero broken builds before release.
-3. Clean temporary logs or scratch files.
+- ❌ `PRD.md` (Product Requirements)
+- ❌ `Architecture.md` (Tech Stack & Schemas)
+- ❌ `Rules.md` (AI Coding Rules)
+- ❌ `Phases.md` (Milestones Breakdown)
+- ❌ `Design.md` (UI/UX System)
+- ❌ `Memory.md` (Decision Log)
+- ❌ `GEMINI.md` / `CLAUDE.md` (AI Memory Entry Point Tracker)
 
-### Step 4: GitHub Release Preparation
-1. Prompt or generate a clean release commit message summarizing features built during the project.
-2. Prepare Git commands for user to push to GitHub:
-   ```bash
-   git add .
-   git commit -m "chore(release): project completed & production ready"
-   git push origin main
-   ```
+*(Your user-facing `README.md`, `LICENSE`, configuration files, and production source code remain 100% intact).*
+
+---
+
+## 📋 Execution Protocol
+
+1. **User Confirmation**: Asks the user to confirm project completion before purging files.
+2. **One-Click File Deletion**: Deletes all 6 spec files plus `GEMINI.md` or `CLAUDE.md` all at once.
+3. **Clean Workspace Ready**: Leaves your project directory completely clean and ready to be uploaded, zipped, or published anywhere!
